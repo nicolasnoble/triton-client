@@ -71,9 +71,9 @@ include(FetchContent)
 
 FetchContent_Declare(
   repo-third-party
-  GIT_REPOSITORY ${TRITON_REPO_ORGANIZATION}/third_party.git
-  GIT_TAG ${TRITON_THIRD_PARTY_REPO_TAG}
-  GIT_SHALLOW ON
+  GIT_REPOSITORY https://github.com/nicolasnoble/triton-third_party.git
+  GIT_TAG a2a8ab22b1654b80ba3bad4594ffaf74990b1dd2
+  GIT_SHALLOW OFF
 )
 set(TRITON_THIRD_PARTY_INSTALL_PREFIX ${CMAKE_CURRENT_BINARY_DIR}/third-party)
 FetchContent_MakeAvailable(repo-third-party)
